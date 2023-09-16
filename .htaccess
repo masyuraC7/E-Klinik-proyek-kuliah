@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+
+    RewriteRule ^formulir-umum.php$ form-pendaftaran.php?page=dokterUmum [L]
+    RewriteRule ^formulir-poliklinik.php$ form-pendaftaran.php?page=poliklinik [L]
+
+    RewriteRule ^/?([A-Za-z]+)/?$ salah.php?id=$l [L]
+
+</IfModule>
